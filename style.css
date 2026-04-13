@@ -1736,16 +1736,19 @@ body {
   display: flex;
   justify-content: center; /* Centers them horizontally */
   align-items: center;     /* Centers them vertically against each other */
-  gap: 40px;               /* Adds space between the two logos */
-  flex-wrap: wrap;         /* Allows them to stack on small mobile screens */
+  gap: 40px;               /* Adds space between the logos */
+  flex-wrap: nowrap;       /* Keep logos on one line */
+  overflow-x: auto;        /* Allow horizontal scrolling on small screens */
   margin-top: 20px;
 }
 
-/* Set a uniform height for both logos */
+/* Set a uniform height for the logos */
 .sponsor-logos img {
-  height: 80px;            /* Adjust this value to your preferred size */
+  max-height: 80px;        /* Adjust this value to your preferred size */
   width: auto;             /* Maintains the aspect ratio */
   display: block;
+  max-width: 30%;          /* Prevent one logo from forcing a wrap */
+  min-width: 120px;
 }
 
 /* Responsive adjustment for mobile */
@@ -1757,7 +1760,8 @@ body {
     gap: 20px;
   }
   .sponsor-logos img {
-    height: 60px;          /* Slightly smaller on mobile devices */
+    max-height: 60px;      /* Slightly smaller on mobile devices */
+    min-width: 100px;
   }
 }
 /* Layout for the About section */
