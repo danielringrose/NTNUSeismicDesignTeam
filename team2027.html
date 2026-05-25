@@ -7,31 +7,21 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-N6WW48L2GD"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag(){dataLayer.push(arguments);} 
       gtag('js', new Date());
 
       gtag('config', 'G-N6WW48L2GD');
     </script>
-    <title>Our Team - NTNU Seismic Competition Team</title>
-    <meta name="description" content="Meet the dedicated students and faculty behind the NTNU Seismic Design Team, including our leads, members, and academic mentors.">
+    <title>Our Team 2027 - NTNU Seismic Competition Team</title>
+    <meta name="description" content="Meet the 2027 students and faculty behind the NTNU Seismic Design Team.">
     <link rel="icon" href="assets/logo_favicon.png">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-      /* This style block fixes an issue where the navigation disappears on certain screen sizes
-         by ensuring the mobile navigation toggle appears at the correct breakpoint. */
       @media (max-width: 992px) {
-        .nav-toggle {
-          display: block;
-        }
+        .nav-toggle { display: block; }
       }
-      .subteam-heading {
-        font-size: 1.8rem;
-        color: #0b2540;
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-        font-weight: 700;
-      }
+      .subteam-heading { font-size: 1.8rem; color: #0b2540; margin-top: 2rem; margin-bottom: 1rem; font-weight: 700; }
     </style>
 </head>
 <body>
@@ -50,7 +40,13 @@
                 <ul class="nav__list" id="nav-menu" aria-hidden="true">
                     <li><a href="index.html" >Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="team.html"aria-current="page">Team</a></li>
+                    <li class="has-dropdown">
+                        <a href="team2027.html">Team</a>
+                        <ul class="dropdown" aria-label="Team years">
+                            <li><a href="team2026.html">2026</a></li>
+                            <li><a href="team2027.html" aria-current="page">2027</a></li>
+                        </ul>
+                    </li>
                     <li><a href="subteams.html">Subteams</a></li>
                     <li><a href="research.html">Research</a></li>
                     <li><a href="Resources.html">Resources</a></li>
@@ -64,26 +60,20 @@
     <main id="main">
         <section class="section section--accent">
             <div class="container">
-                <h2>Team Leads</h2>
+                <h2>Team Leads 2027</h2>
                 <div class="team-leads-box">
                     <div class="team-leads">
-                        <article class="card card--lead">
-                            <img src="assets/DR.jpeg" alt="Daniel Ringrose" class="team-member-image">
-                            <h3>Daniel Ringrose</h3>
-                            <p class="role">Founder and Lead</p>
-                            <p class="contact">Phone: (+47) 99470948</p>
-                        </article>
 
                         <article class="card card--lead">
                             <img src="assets/Tord.jpeg" alt="Tord Terum" class="team-member-image">
                             <h3>Tord Terum</h3>
-                            <p class="role">Finance Lead</p>
+                            <p class="role">Lead</p>
                         </article>
 
                         <article class="card card--lead">
                             <img src="assets/Henrik.png" alt="Henrik Høymer" class="team-member-image">
                             <h3>Henrik Høymer</h3>
-                            <p class="role">Materials & Construction Lead</p>
+                            <p class="role">Technical Lead</p>
                         </article>
 
                         <article class="card card--lead">
@@ -93,34 +83,27 @@
                         </article>
 
                         <article class="card card--lead">
-                            <img src="assets/Fabian.jpeg" alt="Fabian Andberg" class="team-member-image">
-                            <h3>Fabian Andberg</h3>
-                            <p class="role">Simulation Lead</p>
-                        </article>
-
-                        <article class="card card--lead">
                             <img src="assets/Johannes.jpg" alt="Johannes Stenersen" class="team-member-image">
                             <h3>Johannes Stenersen</h3>
                             <p class="role">Structure Lead</p>
                         </article>
 
+                        <article class="card card--lead">
+                            <img  alt="SVE" class="team-member-image">
+                            <h3>Sebastian Van Erp</h3>
+                            <p class="role">Architecture Lead</p>
+                        </article>
+
+                        <article class="card card--lead">
+                            <img src="assets/Fabian.jpeg" alt="Fabian Andberg" class="team-member-image">
+                            <h3>Fabian Andberg</h3>
+                            <p class="role">Simulation Lead</p>
+                        </article>
                     </div>
                 </div>
 
 
                 <h2>Team Members</h2>
-
-                <h3 class="subteam-heading">Architecture</h3>
-                <ul class="team-list">
-                    <li>
-                        <div class="team-member">
-                            <div class="member-info">
-                                <h3>Sebastian Van Erp</h3>
-                                <p class="role">Architecture</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
 
                 <h3 class="subteam-heading">Materials & Construction</h3>
                 <ul class="team-list">
@@ -148,14 +131,6 @@
 
                 <h3 class="subteam-heading">Finance</h3>
                 <ul class="team-list">
-                    <li>
-                        <div class="team-member">
-                            <div class="member-info">
-                                <h3>Larry Cheng</h3>
-                                <p class="role">Finance</p>
-                            </div>
-                        </div>
-                    </li>
                     <li>
                         <div class="team-member">
                             <div class="member-info">
@@ -274,7 +249,7 @@
                     </li>
                 </ul>
 
-                <h2>Faculty Contacts</h2>
+                <h2>Advisors</h2>
                 <ul class="team-list">
                     <li>
                         <div class="team-member">
@@ -292,6 +267,15 @@
                             </div>
                         </div>
                     </li>
+                    <li>
+                        <div class="team-member">
+                            <div class="member-info">
+                                <h3>Daniel Ringrose</h3>
+                                <p class="role">Founder and Alumni Advisor </p>
+                            </div>
+                        </div>
+                    </li>
+
                 </ul>
             </div>
         </section>
@@ -301,7 +285,7 @@
       <div class="container footer-inner">
         <div class="footer-left">
           <img src="assets/logo_transparent.png" alt="NTNU Seismic Team" class="footer-logo">
-          <div>© <span id="year">2026</span> NTNU Seismic Competition Team</div>
+          <div>© <span id="year">2027</span> NTNU Seismic Competition Team</div>
         </div>
         <div class="footer-links">
           <a href="about.html">About</a>

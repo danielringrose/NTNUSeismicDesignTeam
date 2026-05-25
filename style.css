@@ -392,6 +392,51 @@ main {
   align-items: flex-start;
   padding-left: 2vw;
 }
+.nav__list .has-dropdown {
+  position: relative;
+}
+.nav__list .has-dropdown > a {
+  display: inline-block;
+}
+.nav__list .has-dropdown .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #ffffff;
+  border: 1px solid rgba(11,37,64,0.08);
+  min-width: 140px;
+  box-shadow: 0 6px 18px rgba(11,37,64,0.08);
+  list-style: none;
+  padding: 6px 0;
+  margin: 0; /* remove gap that causes hover loss */
+  z-index: 1200;
+}
+.nav__list .has-dropdown:hover .dropdown,
+.nav__list .has-dropdown:focus-within .dropdown {
+  display: block;
+}
+.nav__list .has-dropdown > a { display: inline-block; padding: 8px 12px; }
+.nav__list .dropdown li a {
+  display: block;
+  padding: 8px 14px;
+  color: var(--accent);
+}
+.nav__list .dropdown li a:hover {
+  background: rgba(11,37,64,0.04);
+}
+@media (max-width: 959px) {
+  .nav__list .has-dropdown .dropdown {
+    position: static;
+    box-shadow: none;
+    border: none;
+    margin: 0;
+    display: none;
+  }
+  .nav__list[aria-hidden="false"] .has-dropdown .dropdown {
+    display: block;
+  }
+}
 .rock-layer--one h2,
 .rock-layer--one p {
   margin: 0 0 1rem 0;
