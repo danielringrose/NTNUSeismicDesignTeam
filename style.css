@@ -42,7 +42,6 @@
 @media (min-width: 960px) {
   .nav__list {
     display: flex !important;
-    aria-hidden: false;
   }
 }
 
@@ -580,15 +579,15 @@ margin-bottom: 30px;
 }
 .team-leads {
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
-  gap: 20px;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap: 10px;
   flex-wrap:nowrap;
-  
 }
 
 .team-leads .card {
   flex: 1 1 calc(50% - 10px);
   min-width: 200px;
+  background: rgba(0, 0, 0, 0.08)
 }
 
 @media (max-width: 900px) {
@@ -601,15 +600,18 @@ margin-bottom: 30px;
   }
 }
 
-.team-list {
+.team-list h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
   list-style: none;
-  padding: 0;
-  margin: 0;
+  padding: 2px;
+  margin-left: 15px;
 }
 
 .team-list li {
   border-bottom: 1px solid #e6eef6;
-  padding: 16px 0;
+  padding: 4px 0;
+  margin-bottom: 0;
 }
 
 .team-list li:last-child {
@@ -1604,11 +1606,7 @@ body {
         width: 160px;
         height: 120px;
     }
-}
-    line-height: 1.6;
-    margin-bottom: 0;
-}
-
+  }
 .portland-tower {
     flex: 0 0 auto;
     width: 300px;
