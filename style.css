@@ -1105,6 +1105,11 @@ body.team-2027-page {
   padding-top: 72px;
 }
 
+.team-2027-banner {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
 .team-2027-banner img {
   display: block;
   width: 100%;
