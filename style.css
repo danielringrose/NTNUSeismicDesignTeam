@@ -1101,6 +1101,16 @@ h2 {
   background: linear-gradient(180deg, #f0f9ff 0%, #e5f6ff 100%);
 }
 
+body.team-2027-page {
+  padding-top: 72px;
+}
+
+.team-2027-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* Card improvements */
 .card, .project-card {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
